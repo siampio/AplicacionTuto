@@ -17,13 +17,13 @@
         android:id="@+id/editTextContraseña"
         android:layout_width="262dp"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_below="@+id/editTextEmail"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="CONTRASEÑA"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_alignStart="@+id/editTextEmail" />
+        android:inputType="textPassword"
+        android:textSize="14dp" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -34,23 +34,27 @@
         android:hint="EMAIL"
         android:inputType="textPersonName"
         android:textSize="14dp"
-        android:layout_below="@+id/switch1"
+        android:layout_below="@+id/switchPerfil"
         android:layout_centerHorizontal="true" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario"
+        android:text="Estudiante"
         android:layout_alignParentTop="true"
         android:layout_alignEnd="@+id/editTextEmail" />
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Button"
+        android:text="ENTRAR"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@color/colorPrimaryDark"
         android:layout_below="@+id/editTextContraseña"
         android:layout_alignStart="@+id/editTextContraseña"
         android:layout_alignEnd="@+id/editTextContraseña" />

@@ -17,13 +17,13 @@
         android:id="@+id/editTextContraseña"
         android:layout_width="262dp"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
         android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="CONTRASEÑA"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:inputType="textPassword"
+        android:textSize="14dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="CONTRASEÑA"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textSize="14dp" />
 
     <EditText
@@ -51,11 +51,12 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="ENTRAR"
-        android:layout_below="@+id/editTextContraseña"
+        android:layout_alignEnd="@+id/editTextContraseña"
         android:layout_alignStart="@+id/editTextContraseña"
-        android:layout_alignEnd="@+id/editTextContraseña" />
+        android:layout_below="@+id/editTextContraseña"
+        android:layout_marginTop="28dp"
+        android:text="ENTRAR" />
 </RelativeLayout>
