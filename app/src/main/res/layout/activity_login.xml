@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="proyectutorias.apptutoriasusbbog.LoginActivity">
+    tools:context="proyectutorias.apptutoriasusbbog.Activities.LoginActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -19,10 +19,9 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:background="@drawable/img_onemail"
-            android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
-            />
+            android:layout_marginTop="30dp"
+            android:background="@drawable/img_twomail" />
 
         <!--<android.support.v7.widget.Toolbar-->
             <!--android:id="@+id/toolbar"-->
